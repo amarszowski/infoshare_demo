@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@mui/material";
-import Notification from "./Notification";
+import NotificationComponent from "./NotificationComponent.tsx";
 import { buttonStyles } from "../styles";
 
 const NotificationButton = () => {
@@ -31,7 +31,7 @@ const NotificationButton = () => {
       >
         Click me
       </Button>
-      <Notification
+      <NotificationComponent
         open={notification.open}
         onClose={closeNotification}
         message={notification.message}

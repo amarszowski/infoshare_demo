@@ -16,7 +16,7 @@ interface NotificationProps {
   severity: "success" | "info" | "warning" | "error";
 }
 
-const Notification = ({
+const NotificationComponent = ({
   open,
   onClose,
   message,
@@ -37,4 +37,4 @@ const Notification = ({
   );
 };
 
-export default Notification;
+export default NotificationComponent;
