@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@mui/material";
 import NotificationComponent from "./NotificationComponent.tsx";
-import { buttonStyles } from "../styles";
+import { buttonStyles } from "../styles/styles.ts";
 
 const NotificationButton = () => {
   const [notification, setNotification] = useState({
