@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Button } from "@mui/material";
-import NotificationComponent from "./NotificationComponent.tsx";
+import MyNotification from "./MyNotification.tsx";
 import { buttonStyles } from "../styles/styles.ts";
 
-const NotificationButton = () => {
+const MyButton = () => {
   const [notification, setNotification] = useState({
     open: false,
     message: "",
@@ -31,7 +31,7 @@ const NotificationButton = () => {
       >
         Click me
       </Button>
-      <NotificationComponent
+      <MyNotification
         open={notification.open}
         onClose={closeNotification}
         message={notification.message}
@@ -41,4 +41,4 @@ const NotificationButton = () => {
   );
 };
 
-export default NotificationButton;
+export default MyButton;

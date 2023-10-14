@@ -9,19 +9,19 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(
   },
 );
 
-interface NotificationProps {
+interface MyNotificationProps {
   open: boolean;
   onClose: () => void;
   message: string;
   severity: "success" | "info" | "warning" | "error";
 }
 
-const NotificationComponent = ({
+const MyNotification = ({
   open,
   onClose,
   message,
   severity,
-}: NotificationProps) => {
+}: MyNotificationProps) => {
   return (
     <Snackbar
       open={open}
@@ -37,4 +37,4 @@ const NotificationComponent = ({
   );
 };
 
-export default NotificationComponent;
+export default MyNotification;

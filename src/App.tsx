@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
-import NotificationButton from "./components/NotificationButton";
+import MyButton from "./components/MyButton.tsx";
 import { boxStyles } from "./styles/styles.ts";
 
 const App = () => {
   return (
     <Box sx={boxStyles}>
-      <NotificationButton />
+      <MyButton />
     </Box>
   );
 };
