@@ -3,11 +3,15 @@ import { Button } from "@mui/material";
 import MyNotification from "./MyNotification.tsx";
 import { buttonStyles } from "../styles/styles.ts";
 import { useNotification } from "../context/NotificationContext.tsx";
-import { useDispatch } from "react-redux";
-import { showNotification } from "../redux/slices/notificationSlice.ts";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  closeNotification,
+  showNotification,
+} from "../redux/slices/notificationSlice.ts";
 import { useNotificationStore } from "../zustand/store.ts";
 import { useSetAtom } from "jotai";
 import { notificationAtom } from "../jotai/notificationAtom.ts";
+import { RootState } from "../redux/store.ts";
 
 const MyButton = () => {
   const [notification, setNotification] = useState({
